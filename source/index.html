@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Тестовое задание для 2UP на стажировку</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
   </head>
   <body>
     <!-- begin header -->
@@ -58,12 +58,15 @@
 
         <!-- start hero -->
         <section class="hero">
-          <div class="wrapper">
+          <div class="hero__wrapper">
+            <div class="hero__logo logo">
+              <img src="img/logo.png" width="70" height="70" alt="логотип морских прогулок">
+            </div>
             <h1 class="hero__title">
               <span class="hero__title-small">Морские прогулки</span>
               по чёрному морю
             </h1>
-            <a href="#" class="hero__btn">Выбрать круиз</a>
+            <a href="#" class="hero__btn  btn">Выбрать круиз</a>
           </div>
         </section>
         <!-- end hero -->
@@ -75,11 +78,12 @@
       <div class="container">
         <!-- begin catalog -->
         <section class="catalog">
-          <div class="wrapper">
+          <div class="catalog__wrapper">
             <h2 class="catalog__title">Каталог круизов</h2>
 
             <!-- begin sorting-->
             <section class="catalog__sort  sorting">
+              <h3 class="visually-hidden">Фильтр круизов</h3>
               <ul class="sorting__list">
                 <li class="sorting__item">
                   <a class="sorting__link  sorting__link--active">Сортировать круизы по цене</a>
@@ -101,7 +105,7 @@
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#" class="catalog__link">
-                  <img src="#" alt="море по дороге в Анапу" class="catalog__photo">
+                  <img src="img/card1-mob.jpg" width="290" height="228" alt="море по дороге в Анапу" class="catalog__photo">
                 </a>
                 <div class="catalog__info">
                   <a href="#" class="catalog__title">
@@ -125,7 +129,7 @@
 
               <li class="catalog__item">
                 <a href="#" class="catalog__link">
-                  <img src="#" alt="на морской прогулке" class="catalog__photo">
+                  <img src="img/card2-mob.jpg" width="290" height="228" alt="на морской прогулке" class="catalog__photo">
                 </a>
                 <div class="catalog__info">
                   <a href="#" class="catalog__title">
@@ -143,14 +147,14 @@
                   </div>
                   <div class="catalog__inner">
                     <p class="catalog__price">5 000 руб.</p>
-                    <p class="catalog__price--old">15000 руб.</p>
+                    <p class="catalog__price  catalog__price--old">15000 руб.</p>
                   </div>
                 </div>
               </li>
 
               <li class="catalog__item">
                 <a href="#" class="catalog__link">
-                  <img src="#" alt="вид на Геленджик" class="catalog__photo">
+                  <img src="img/card3-mob.jpg" width="290" height="228" alt="вид на Геленджик" class="catalog__photo">
                 </a>
                 <div class="catalog__info">
                   <a href="#" class="catalog__title">
@@ -168,14 +172,14 @@
                   </div>
                   <div class="catalog__inner">
                     <p class="catalog__price">7 000 руб.</p>
-                    <p class="catalog__price--old">10000 руб.</p>
+                    <p class="catalog__price  catalog__price--old">10000 руб.</p>
                   </div>
                 </div>
               </li>
 
               <li class="catalog__item">
                 <a href="#" class="catalog__link">
-                  <img src="#" alt="вид на Новороссийск" class="catalog__photo">
+                  <img src="img/card4-mob.jpg" width="290" height="228" alt="вид на Новороссийск" class="catalog__photo">
                 </a>
                 <div class="catalog__info">
                   <a href="#" class="catalog__title">
@@ -222,14 +226,15 @@
               </li>
             </ul>
             <!-- end catalog__list -->
-            <a href="#" class="catalog__more">Больше круизов</a>
+            <a href="#" class="catalog__more  btn">Больше круизов</a>
           </div>
         </section>
         <!-- end catalog -->
       </div>
     </main>
 
-    <footer>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container">
 
         <!-- begin footer-nav -->
