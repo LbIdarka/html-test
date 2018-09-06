@@ -2,11 +2,78 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Тестовое задание для 2UP на стажировку</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
 <body>
+  <!-- begin header -->
+  <header class="page-header">
+    <div class="container">
 
+      <!-- start main-nav -->
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <!-- begin site-list -->
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Меню 1</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Меню 2</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Меню 3</a>
+          </li>
+        </ul>
+        <!-- end site-list -->
+
+        <!-- start user-list -->
+        <ul class="main-nav user-list">
+          <li class="user-list__item">Личный кабинет</li>
+          <li class="user-list__item">
+            <select name="currency" id="currency">
+              <option value="rub" selected>Рубль</option>
+              <option value="usd">Dollar</option>
+            </select>
+          </li>
+          <li class="user-list__item">
+              <select name="lang" id="lang">
+                  <option value="ru" selected>Ru</option>
+                  <option value="en">En</option>
+                </select>
+          </li>
+        </ul>
+        <!-- end user-list -->
+
+        <p class="main-nav__info  info-support">
+          <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
+          <span class="info-support__text">Круглосуточная поддержка</span>
+        </p>
+      </nav>
+      <!-- end main-nav -->
+
+      <!-- start hero -->
+      <section class="hero">
+        <div class="wrapper">
+          <h1 class="hero__title">
+            <span class="hero__title-small">Морские прогулки</span>
+            по чёрному морю
+          </h1>
+          <a href="#" class="hero__btn">Выбрать круиз</a>
+        </div>
+      </section>
+      <!-- end hero -->
+
+    </div>
+  </header>
+  <!-- end header -->
+
+  <main>
+
+  </main>
 </body>
 </html>
