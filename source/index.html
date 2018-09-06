@@ -1,160 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Тестовое задание для 2UP на стажировку</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <!-- begin header -->
-  <header class="page-header">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание для 2UP на стажировку</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- begin header -->
+    <header class="page-header">
+      <div class="container">
 
-      <!-- start main-nav -->
-      <nav class="main-nav  main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-        <!-- begin site-list -->
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Меню 1</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Меню 2</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Меню 3</a>
-          </li>
-        </ul>
-        <!-- end site-list -->
-
-        <!-- start user-list -->
-        <ul class="main-nav user-list">
-          <li class="user-list__item">Личный кабинет</li>
-          <li class="user-list__item">
-            <select name="currency" id="currency">
-              <option value="rub" selected>Рубль</option>
-              <option value="usd">Dollar</option>
-            </select>
-          </li>
-          <li class="user-list__item">
-              <select name="lang" id="lang">
-                  <option value="ru" selected>Ru</option>
-                  <option value="en">En</option>
-                </select>
-          </li>
-        </ul>
-        <!-- end user-list -->
-
-        <p class="main-nav__info  info-support">
-          <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
-          <span class="info-support__text">Круглосуточная поддержка</span>
-        </p>
-      </nav>
-      <!-- end main-nav -->
-
-      <!-- start hero -->
-      <section class="hero">
-        <div class="wrapper">
-          <h1 class="hero__title">
-            <span class="hero__title-small">Морские прогулки</span>
-            по чёрному морю
-          </h1>
-          <a href="#" class="hero__btn">Выбрать круиз</a>
-        </div>
-      </section>
-      <!-- end hero -->
-
-    </div>
-  </header>
-  <!-- end header -->
-
-  <main>
-    <section class="catalog">
-      <div class="wrapper">
-        <h2 class="catalog__title">Каталог круизов</h2>
-
-        <!-- begin sorting-->
-        <section class="catalog__sort  sorting">
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <a class="sorting__link  sorting__link--active">Сортировать круизы по цене</a>
-              <button class="sorting__sign" type="button">
-                <span class="visually-hidden"> Открыть подменю</span>
-              </button>
+        <!-- start main-nav -->
+        <nav class="main-nav  main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <!-- begin site-list -->
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Меню 1</a>
             </li>
-            <li class="sorting__item">
-                <a class="sorting__link">Сортировать круизы по цене</a>
-                <button class="sorting__sign" type="button">
-                  <span class="visually-hidden"> Открыть подменю</span>
-                </button>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Меню 2</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Меню 3</a>
             </li>
           </ul>
-        </section>
-        <!-- end sorting -->
+          <!-- end site-list -->
 
-        <!-- begin catalog__list -->
-        <ul class="catalog__list">
-
-          <li class="catalog__item">
-            <a href="#" class="catalog__link">
-              <img src="#" alt="море по дороге в Анапу" class="catalog__photo">
-            </a>
-            <div class="catalog__info">
-              <a href="#" class="catalog__title">
-                <h3>Морская круиз в Анапу</h3>
-              </a>
-              <div class="catalog__track">
-                <p class="catalog__track-text">
-                  <span>Маршрут: </span>
-                  Сочи-Лазаревское-Геленджик-Анапа
-                </p>
-                <p class="catalog__track-text">
-                  <span>Продолжительность: </span>
-                  10 ч. 0 мин.
-                </p>
-              </div>
-              <div class="catalog__inner">
-                <p class="catalog__price">49 000 руб.</p>
-              </div>
-            </div>
-          </li>
-
-          <li class="catalog__item">
-              <a href="#" class="catalog__link">
-                <img src="#" alt="на морской прогулке" class="catalog__photo">
-              </a>
-              <div class="catalog__info">
-                <a href="#" class="catalog__title">
-                  <h3>Обзорная морская  прогулка с экскурсией</h3>
-                </a>
-                <div class="catalog__track">
-                  <p class="catalog__track-text">
-                    <span>Маршрут: </span>
-                    Сочи-Адлер-Сочи (без высадки)
-                  </p>
-                  <p class="catalog__track-text">
-                    <span>Продолжительность: </span>
-                    1 ч.
-                  </p>
-                </div>
-                <div class="catalog__inner">
-                  <p class="catalog__price">5 000 руб.</p>
-                  <p class="catalog__price--old">15000 руб.</p>
-                </div>
-              </div>
+          <!-- start user-list -->
+          <ul class="main-nav user-list">
+            <li class="user-list__item">Личный кабинет</li>
+            <li class="user-list__item">
+              <select name="currency" id="currency">
+                <option value="rub" selected>Рубль</option>
+                <option value="usd">Dollar</option>
+              </select>
             </li>
+            <li class="user-list__item">
+                <select name="lang" id="lang">
+                    <option value="ru" selected>Ru</option>
+                    <option value="en">En</option>
+                  </select>
+            </li>
+          </ul>
+          <!-- end user-list -->
 
-            <li class="catalog__item">
+          <p class="main-nav__info  info-support">
+            <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
+            <span class="info-support__text">Круглосуточная поддержка</span>
+          </p>
+        </nav>
+        <!-- end main-nav -->
+
+        <!-- start hero -->
+        <section class="hero">
+          <div class="wrapper">
+            <h1 class="hero__title">
+              <span class="hero__title-small">Морские прогулки</span>
+              по чёрному морю
+            </h1>
+            <a href="#" class="hero__btn">Выбрать круиз</a>
+          </div>
+        </section>
+        <!-- end hero -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <main>
+      <div class="container">
+        <!-- begin catalog -->
+        <section class="catalog">
+          <div class="wrapper">
+            <h2 class="catalog__title">Каталог круизов</h2>
+
+            <!-- begin sorting-->
+            <section class="catalog__sort  sorting">
+              <ul class="sorting__list">
+                <li class="sorting__item">
+                  <a class="sorting__link  sorting__link--active">Сортировать круизы по цене</a>
+                  <button class="sorting__sign" type="button">
+                    <span class="visually-hidden"> Открыть подменю</span>
+                  </button>
+                </li>
+                <li class="sorting__item">
+                    <a class="sorting__link">Сортировать круизы по цене</a>
+                    <button class="sorting__sign" type="button">
+                      <span class="visually-hidden"> Открыть подменю</span>
+                    </button>
+                </li>
+              </ul>
+            </section>
+            <!-- end sorting -->
+
+            <!-- begin catalog__list -->
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <img src="#" alt="море по дороге в Анапу" class="catalog__photo">
+                </a>
+                <div class="catalog__info">
+                  <a href="#" class="catalog__title">
+                    <h3>Морской круиз в Анапу</h3>
+                  </a>
+                  <div class="catalog__track">
+                    <p class="catalog__track-text">
+                      <span>Маршрут: </span>
+                      Сочи-Лазаревское-Геленджик-Анапа
+                    </p>
+                    <p class="catalog__track-text">
+                      <span>Продолжительность: </span>
+                      10 ч. 0 мин.
+                    </p>
+                  </div>
+                  <div class="catalog__inner">
+                    <p class="catalog__price">49 000 руб.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <img src="#" alt="на морской прогулке" class="catalog__photo">
+                </a>
+                <div class="catalog__info">
+                  <a href="#" class="catalog__title">
+                    <h3>Обзорная морская прогулка с экскурсией</h3>
+                  </a>
+                  <div class="catalog__track">
+                    <p class="catalog__track-text">
+                      <span>Маршрут: </span>
+                      Сочи-Адлер-Сочи (без высадки)
+                    </p>
+                    <p class="catalog__track-text">
+                      <span>Продолжительность: </span>
+                      1 ч.
+                    </p>
+                  </div>
+                  <div class="catalog__inner">
+                    <p class="catalog__price">5 000 руб.</p>
+                    <p class="catalog__price--old">15000 руб.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item">
                 <a href="#" class="catalog__link">
                   <img src="#" alt="вид на Геленджик" class="catalog__photo">
                 </a>
                 <div class="catalog__info">
                   <a href="#" class="catalog__title">
-                    <h3>Морская прогулка  в Геленджик</h3>
+                    <h3>Морская прогулка в Геленджик</h3>
                   </a>
                   <div class="catalog__track">
                     <p class="catalog__track-text">
@@ -174,58 +174,124 @@
               </li>
 
               <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="#" alt="вид на Новороссийск" class="catalog__photo">
+                <a href="#" class="catalog__link">
+                  <img src="#" alt="вид на Новороссийск" class="catalog__photo">
+                </a>
+                <div class="catalog__info">
+                  <a href="#" class="catalog__title">
+                    <h3>Морской круиз в Новороссийск</h3>
                   </a>
-                  <div class="catalog__info">
-                    <a href="#" class="catalog__title">
-                      <h3>Морской круиз  в Новороссийск</h3>
-                    </a>
-                    <div class="catalog__track">
-                      <p class="catalog__track-text">
-                        <span>Маршрут: </span>
-                        Сочи-Геленджик- Новороссйиск-Геленджик-Сочи
-                      </p>
-                      <p class="catalog__track-text">
-                        <span>Продолжительность: </span>
-                        13 ч. 0 мин.
-                      </p>
-                    </div>
-                    <div class="catalog__inner">
-                      <p class="catalog__price">14 800 руб.</p>
-                    </div>
+                  <div class="catalog__track">
+                    <p class="catalog__track-text">
+                      <span>Маршрут: </span>
+                      Сочи-Геленджик- Новороссйиск-Геленджик-Сочи
+                    </p>
+                    <p class="catalog__track-text">
+                      <span>Продолжительность: </span>
+                      13 ч. 0 мин.
+                    </p>
                   </div>
-                </li>
+                  <div class="catalog__inner">
+                    <p class="catalog__price">14 800 руб.</p>
+                  </div>
+                </div>
+              </li>
 
-                <li class="catalog__item">
-                    <a href="#" class="catalog__link">
-                      <img src="#" alt="вид на Абрау-Дюрсо" class="catalog__photo">
-                    </a>
-                    <div class="catalog__info">
-                      <a href="#" class="catalog__title">
-                        <h3>Морская прогулка в Абрау-Дюрсо</h3>
-                      </a>
-                      <div class="catalog__track">
-                        <p class="catalog__track-text">
-                          <span>Маршрут: </span>
-                          Маршрут: Сочи-Абрау-Дюрсо
-                        </p>
-                        <p class="catalog__track-text">
-                          <span>Продолжительность: </span>
-                          11 ч. 0 мин.
-                        </p>
-                      </div>
-                      <div class="catalog__inner">
-                        <p class="catalog__price">14 800 руб.</p>
-                      </div>
-                    </div>
-                  </li>
-        </ul>
-        <!-- end catalog__list -->
-        <a href="#" class="catalog__more">Больше круизов</a>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <img src="#" alt="вид на Абрау-Дюрсо" class="catalog__photo">
+                </a>
+                <div class="catalog__info">
+                  <a href="#" class="catalog__title">
+                    <h3>Морская прогулка в Абрау-Дюрсо</h3>
+                  </a>
+                  <div class="catalog__track">
+                    <p class="catalog__track-text">
+                      <span>Маршрут: </span>
+                      Маршрут: Сочи-Абрау-Дюрсо
+                    </p>
+                    <p class="catalog__track-text">
+                      <span>Продолжительность: </span>
+                      11 ч. 0 мин.
+                    </p>
+                  </div>
+                  <div class="catalog__inner">
+                    <p class="catalog__price">14 800 руб.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- end catalog__list -->
+            <a href="#" class="catalog__more">Больше круизов</a>
+          </div>
+        </section>
+        <!-- end catalog -->
       </div>
-    </section>
+    </main>
 
-  </main>
-</body>
+    <footer>
+      <div class="container">
+
+        <!-- begin footer-nav -->
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Вход для партнеров</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">О компании</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end footer-nav -->
+
+        <!-- begin social -->
+        <section class="social">
+          <h3 class="visually-hidden">Мы в соц.сетях</h3>
+          <p class="social__text">Будь на связи:</p>
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- end social -->
+
+        <!-- begin page-footer__info -->
+        <div class="page-footer__info">
+          <p class="page-footer__info-text  info-support">
+            <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
+            <span class="info-support__text">Круглосуточная поддержка</span>
+          </p>
+          <p class="page-footer__info-text copyright">© 2016 OOO «Городские Круизы»</p>
+        </div>
+        <!-- end page-footer__info -->
+      </div>
+    </footer>
+
+  </body>
 </html>
