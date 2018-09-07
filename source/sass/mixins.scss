@@ -19,3 +19,13 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin decor-btn {
+  position: relative;
+  width: 20px;
+  height: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
