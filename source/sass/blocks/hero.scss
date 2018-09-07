@@ -1,0 +1,50 @@
+.hero__wrapper {
+  @include container;
+  position: relative;
+}
+
+.hero__title {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: -10px;
+  font-family: $font-head;
+  font-size: 50px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__title-small {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.hero__btn {
+  margin: 0 auto;
+  margin-top: 40px;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+
+    & .hero__icon {
+      stroke: $primary-bg-color;
+    }
+  }
+}
+
+.hero__icon {
+  position: absolute;
+  bottom: -250px;
+  left: 47%;
+  transform: translateX(-50%);
+  fill-opacity: 0;
+  fill: none;
+  stroke: #0d3351;
+  stroke-width: 3px;
+  stroke-dasharray: 12 6;
+  fill-rule: evenodd;
+}
