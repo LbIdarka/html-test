@@ -112,30 +112,31 @@
     </header>
     <!-- end header -->
 
-    <main>
-      <div class="container">
+    <main class="page-main">
+      <div class="page-main__container">
         <!-- begin catalog -->
         <section class="catalog" id="catalog">
-          <div class="catalog__wrapper">
+          <header class="catalog__header">
             <h2 class="catalog__title">Каталог круизов</h2>
+          </header>
 
             <!-- begin sorting-->
             <section class="catalog__sort  sorting">
               <h3 class="visually-hidden">Фильтр круизов</h3>
-              <ul class="sorting__list">
-                <li class="sorting__item">
-                  <a class="sorting__link  sorting__link--active">Сортировать круизы по цене</a>
-                  <button class="sorting__sign" type="button">
-                    <span class="visually-hidden"> Открыть подменю</span>
-                  </button>
-                </li>
-                <li class="sorting__item">
-                    <a class="sorting__link">Сортировать круизы по цене</a>
-                    <button class="sorting__sign" type="button">
-                      <span class="visually-hidden"> Открыть подменю</span>
-                    </button>
-                </li>
-              </ul>
+              <div class="sorting__list">
+                <a href="#" class="sorting__link">Сортировать круизы по цене</a>
+                <button class="sorting__sign" type="button">
+                  <span class="visually-hidden"> Открыть подменю</span>
+                </button>
+                <ul class="sorting__menu">
+                  <li class="sorting__menu-item">
+                    <a class="sorting__link  sorting__link--submenu">Сортировать круизы по популярности</a>
+                  </li>
+                  <li class="sorting__menu-item">
+                      <a class="sorting__link  sorting__link--submenu">Сортировать круизы по времени</a>
+                    </li>
+                </ul>
+              </div>
             </section>
             <!-- end sorting -->
 
@@ -265,7 +266,6 @@
             </ul>
             <!-- end catalog__list -->
             <a href="#" class="catalog__more  btn">Больше круизов</a>
-          </div>
         </section>
         <!-- end catalog -->
       </div>
