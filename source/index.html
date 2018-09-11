@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="nojs">
+<html class="nojs" lang="ru">
   <head>
     <meta charset="UTF-8">
     <link href="css/style.min.css" rel="stylesheet">
@@ -51,13 +51,22 @@
           <!-- begin site-list -->
           <ul class="main-nav__list site-list">
             <li class="main-nav__item  site-list__item">
-              <a href="#" class="site-list__link">Меню 1</a>
+              <a href="#" class="site-list__link">Популярные маршруты</a>
             </li>
             <li class="main-nav__item  site-list__item">
-              <a href="#" class="site-list__link">Меню 2</a>
+              <a href="#" class="site-list__link">Расписание рейсов</a>
             </li>
             <li class="main-nav__item  site-list__item">
-              <a href="#" class="site-list__link">Меню 3</a>
+              <a href="#" class="site-list__link">Забронированные рейсы</a>
+            </li>
+            <li class="main-nav__item  site-list__item">
+              <a href="#" class="site-list__link">Вход для партнеров</a>
+            </li>
+            <li class="main-nav__item  site-list__item">
+              <a href="#" class="site-list__link">О компании</a>
+            </li>
+            <li class="main-nav__item  site-list__item">
+              <a href="#" class="site-list__link">Контакты</a>
             </li>
           </ul>
           <!-- end site-list -->
@@ -125,10 +134,10 @@
               <h3 class="visually-hidden">Фильтр круизов</h3>
               <div class="sorting__list">
                 <a href="#" class="sorting__link">Сортировать круизы по <i>цене</i>
-                  <button class="sorting__sign" type="button">
-                    <span class="visually-hidden"> Открыть подменю</span>
-                  </button>
                 </a>
+                <button class="sorting__sign" type="button">
+                  <span class="visually-hidden"> Открыть подменю</span>
+                </button>
                 <ul class="sorting__menu">
                   <li class="sorting__menu-item">
                     <a class="sorting__link  sorting__link--submenu">Сортировать круизы по <i>популярности</i></a>
@@ -145,14 +154,15 @@
             <ul class="catalog__list">
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
+                  <b class="card__label  card__label--hit"><span>Хит продаж</span></b>
                   <img src="img/card1-mob.jpg" width="290" height="228" alt="море по дороге в Анапу" class="card__photo">
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
                     <h3 class="card__title">Морской круиз<br> в&nbsp;Анапу
-                      <button class="card__link-btn" class="button">
+                      <span class="card__link-btn">
                         <span class="visually-hidden">Открыть описание круиза</span>
-                      </button>
+                      </span>
                     </h3>
                   </a>
                   <div class="card__track">
@@ -173,14 +183,15 @@
 
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
+                  <b class="card__label"><span>Акция</span></b>
                   <img src="img/card2-mob.jpg" width="290" height="228" alt="на морской прогулке" class="card__photo">
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
                     <h3 class="card__title">Обзорная морская прогулка с экскурсией
-                      <button class="card__link-btn" class="button">
+                      <span class="card__link-btn">
                         <span class="visually-hidden">Открыть описание круиза</span>
-                      </button>
+                      </span>
                     </h3>
                   </a>
                   <div class="card__track">
@@ -202,14 +213,15 @@
 
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
+                  <b class="card__label"><span>скидка 10%</span></b>
                   <img src="img/card3-mob.jpg" width="290" height="228" alt="вид на Геленджик" class="card__photo">
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
                     <h3 class="card__title">Морская прогулка в&nbsp;Геленджик
-                      <button class="card__link-btn" class="button">
+                      <span class="card__link-btn">
                         <span class="visually-hidden">Открыть описание круиза</span>
-                      </button>
+                      </span>
                     </h3>
                   </a>
                   <div class="card__track">
@@ -236,9 +248,9 @@
                 <div class="card__info">
                   <a href="#" class="card__link">
                     <h3 class="card__title">Морской круиз в&nbsp;Новороссийск
-                      <button class="card__link-btn" class="button">
+                      <span class="card__link-btn">
                         <span class="visually-hidden">Открыть описание круиза</span>
-                      </button>
+                      </span>
                     </h3>
                   </a>
                   <div class="card__track">
@@ -264,9 +276,9 @@
                 <div class="card__info">
                   <a href="#" class="card__link">
                     <h3 class="card__title">Морская прогулка в Абрау-Дюрсо
-                      <button class="card__link-btn" class="button">
+                      <span class="card__link-btn">
                         <span class="visually-hidden">Открыть описание круиза</span>
-                      </button>
+                      </span>
                     </h3>
                   </a>
                   <div class="card__track">
@@ -294,7 +306,7 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="container">
+      <div class="page-footer__wrapper">
 
         <!-- begin footer-nav -->
         <nav class="footer-nav">
@@ -319,25 +331,25 @@
 
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link  social__link--vk">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
 
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link  social__link--ok">
                 <span class="visually-hidden">Одноклассники</span>
               </a>
             </li>
 
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link  social__link--yt">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
 
             <li class="social__item">
-              <a href="#" class="social__link">
+              <a href="#" class="social__link  social__link--insta">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -346,14 +358,12 @@
         <!-- end social -->
 
         <!-- begin page-footer__info -->
-        <div class="page-footer__info">
-          <p class="page-footer__info-text  info-support">
-            <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
-            <span class="info-support__text">Круглосуточная поддержка</span>
-          </p>
-          <p class="page-footer__info-text copyright">© 2016 OOO «Городские Круизы»</p>
+        <div class="page-footer__info  info-support">
+          <a href="tel:88005006105" class="info-support__phone">8 800 500-61-05</a>
+          <span class="info-support__text">Круглосуточная поддержка</span>
         </div>
         <!-- end page-footer__info -->
+        <p class="page-footer__info-text copyright">© 2016 OOO «Городские Круизы»</p>
       </div>
     </footer>
 
