@@ -11,7 +11,7 @@
 
 .sorting__link {
   display: block;
-  width: 100%;
+  width: 210px;
   color: inherit;
   text-align: center;
   text-decoration: none;
@@ -27,20 +27,30 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 8px;
     right: 0;
-    border: 3px solid $primary-text-color;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    transform: rotate(135deg);
+    border: 5px solid transparent;
+    border-top-color: $primary-text-color;
+    border-bottom: 0;
   }
 
   &--open::before {
-    top: 5px;
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &--open::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    display: block;
+    border: 5px solid transparent;
     border-bottom-color: $primary-text-color;
-    border-left-color: $primary-text-color;
-    border-top-color: transparent;
-    border-right-color: transparent;
+    border-top: 0;
   }
 }
 

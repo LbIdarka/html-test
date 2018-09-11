@@ -1,6 +1,6 @@
 @mixin container () {
-  width: auto;
-  padding: 0 15px;
+  width: 290px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     max-width: 720px;
@@ -23,7 +23,7 @@
 @mixin decor-btn {
   position: relative;
   width: 20px;
-  height: 10px;
+  height: auto;
   padding: 0;
   background: none;
   border: none;

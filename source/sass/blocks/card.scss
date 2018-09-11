@@ -1,3 +1,43 @@
+.card {
+  position: relative;
+}
+
+.card__label {
+  position: absolute;
+  display: flex;
+  top: -12px;
+  right: 23px;
+  width: 89px;
+  height: 102px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $secondary-bg-color;
+  text-transform: uppercase;
+  z-index: 2;
+
+  & span {
+    margin: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 102px;
+    border: 45px solid;
+    border-width: 55px 45px 20px 45px;
+    border-color: #f20542 #f20542 transparent #f20542;
+    z-index: -1;
+  }
+
+  &--hit::before {
+    border-color: $primary-bg-color $primary-bg-color transparent $primary-bg-color;
+  }
+}
+
 .card__photo {
   display: block;
   margin: 0 auto;
@@ -28,13 +68,13 @@
 }
 
 .card__link-btn {
-  @include decor-btn;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 10px;
+    left: 10px;
     border: 3px solid $secondary-text-color;
     border-bottom-color: transparent;
     border-left-color: transparent;

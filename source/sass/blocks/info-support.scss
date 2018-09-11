@@ -6,7 +6,14 @@
 .info-support__phone {
   display: block;
   width: 100%;
+  line-height: 120%;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
+}
+
+.info-support__text {
+  margin-top: 7px;
+  font-size: 10px;
+  line-height: 120%;
 }

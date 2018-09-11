@@ -1,0 +1,12 @@
+.page-footer {
+  padding: 23px 0 35px;
+  background-color: $secondary-bg-color;
+}
+
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__info {
+  margin-top: 18px;
+}
