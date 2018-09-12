@@ -1,5 +1,13 @@
 .site-list__item {
-  margin-top: 15px;
+  &:hover,
+  &:focus {
+    background-color: $secondary-text-color;
+  }
+
+  &:active {
+    background-color: inherit;
+    opacity: 0.5;
+  }
 }
 
 .site-list__link {

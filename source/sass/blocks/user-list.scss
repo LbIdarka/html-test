@@ -1,8 +1,16 @@
 .user-list {
-  margin-top: 20px;
-  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
 }
 
 .user-list__item {
   padding: 10px 20px;
+}
+
+.user-list__select {
+  font: inherit;
+  color: white;
+  border: none;
+  background: #0d3351;
 }

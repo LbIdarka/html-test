@@ -21,11 +21,11 @@
 }
 
 @mixin decor-btn {
-  position: relative;
-  width: 20px;
-  height: auto;
-  padding: 0;
-  background: none;
-  border: none;
-  outline: none;
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #0d3351;
+  border-bottom: 0;
 }

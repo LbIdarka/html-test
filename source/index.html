@@ -73,15 +73,24 @@
 
           <!-- start user-list -->
           <ul class="main-nav__list user-list">
-            <li class="main-nav__item  user-list__item">Личный кабинет</li>
             <li class="main-nav__item  user-list__item">
-              <select name="currency" id="currency">
+              <a href="#" class="user-list__link  user-enter">
+                <svg class="user-enter__icon" width="10" height="12" role="img">
+                      <use xlink:href="#user"></use>
+                    </svg>
+              Личный кабинет</a>
+            </li>
+            <li class="main-nav__item  user-list__item">
+              <svg class="user-enter__icon" width="10" height="12" role="img">
+                  <use xlink:href="#rub"></use>
+                </svg>
+              <select class="user-list__select" name="currency" id="currency">
                 <option value="rub" selected>Рубль</option>
                 <option value="usd">Dollar</option>
               </select>
             </li>
             <li class="main-nav__item  user-list__item">
-                <select name="lang" id="lang">
+                <select name="lang" class="user-list__select" id="lang">
                     <option value="ru" selected>Ru</option>
                     <option value="en">En</option>
                   </select>

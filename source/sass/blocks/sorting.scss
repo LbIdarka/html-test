@@ -22,16 +22,16 @@
 }
 
 .sorting__sign {
-  @include decor-btn;
+  position: relative;
+  width: 20px;
+  height: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
 
   &::before {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    right: 0;
-    border: 5px solid transparent;
-    border-top-color: $primary-text-color;
-    border-bottom: 0;
+    @include decor-btn;
   }
 
   &--open::before {
