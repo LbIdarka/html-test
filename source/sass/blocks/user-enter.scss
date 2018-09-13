@@ -1,0 +1,22 @@
+.user-enter {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    @include decor-btn;
+    bottom: 5px;
+    right: -20px;
+    border-top-color: inherit;
+  }
+
+  &:hover .user-enter__icon,
+  &focus .user-enter__icon {
+    fill: $secondary-bg-color;
+  }
+}
+
+.user-enter__icon {
+  margin-right: 10px;
+  fill: $primary-bg-color;
+}

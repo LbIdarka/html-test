@@ -1,0 +1,31 @@
+@mixin container () {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1170px;
+    padding: 0 15px;
+  }
+}
+
+@mixin list () {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin decor-btn {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  border: 5px solid transparent;
+  border-top-color: #0d3351;
+  border-bottom: 0;
+}

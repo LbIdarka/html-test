@@ -1,0 +1,10 @@
+.page-header {
+  padding: 25px 0 210px;
+  background-image: url("../img/bg-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.page-header__container {
+  @include container;
+}

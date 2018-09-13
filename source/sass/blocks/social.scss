@@ -1,0 +1,55 @@
+.social__text {
+  margin: 0;
+  text-align: center;
+}
+
+.social__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.social__item {
+  width: 30px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $primary-text-color;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../img/vk.png");
+  }
+
+  &--ok {
+    background-image: url("../img/ok.png");
+  }
+
+  &--yt {
+    background-image: url("../img/yt.png");
+  }
+
+  &--insta {
+    background-image: url("../img/insta.png");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

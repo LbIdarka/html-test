@@ -1,0 +1,16 @@
+.site-list__item {
+  &:hover,
+  &:focus {
+    background-color: $secondary-text-color;
+  }
+
+  &:active {
+    background-color: inherit;
+    opacity: 0.5;
+  }
+}
+
+.site-list__link {
+  color: inherit;
+  text-decoration: none;
+}

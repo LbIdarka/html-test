@@ -1,0 +1,112 @@
+.card {
+  position: relative;
+}
+
+.card__label {
+  position: absolute;
+  display: flex;
+  top: -12px;
+  right: 23px;
+  width: 89px;
+  height: 102px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $secondary-bg-color;
+  text-transform: uppercase;
+  z-index: 2;
+
+  & span {
+    margin: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 102px;
+    border: 45px solid;
+    border-width: 55px 45px 20px 45px;
+    border-color: #f20542 #f20542 transparent #f20542;
+    z-index: -1;
+  }
+
+  &--hit::before {
+    border-color: $primary-bg-color $primary-bg-color transparent $primary-bg-color;
+  }
+}
+
+.card__photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 237px;
+  padding: 25px 10px 30px 22px;
+  color: $primary-text-color;
+  background-color: $secondary-bg-color;
+}
+
+.card__link {
+  display: block;
+  color: $secondary-text-color;
+  text-decoration: none;
+}
+
+.card__title {
+  position: relative;
+  margin: 0;
+  font-family: $font-head;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.card__link-btn {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px solid $secondary-text-color;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+  }
+}
+
+.card__track-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card__track-subtitle {
+  font-weight: 700;
+}
+
+.card__inner {
+  display: flex;
+  align-items: baseline;
+  margin-top: auto;
+}
+
+.card__price {
+  margin: 0;
+  font-family: $font-head;
+  font-size: 30px;
+  line-height: 48px;
+
+  &--old {
+    margin-left: 15px;
+    font-size: 18px;
+    opacity: 0.55;
+    text-decoration: line-through;
+  }
+}
