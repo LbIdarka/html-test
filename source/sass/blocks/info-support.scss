@@ -1,6 +1,19 @@
 .info-support {
   margin: 0;
+  padding-bottom: 10px;
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    color: $secondary-bg-color;
+    background-color: $primary-text-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin-left: 30px;
+    padding: 0;
+    line-height: 14px;
+  }
 }
 
 .info-support__phone {

@@ -1,12 +1,13 @@
 .user-enter {
   position: relative;
+  padding-right: 20px;
   color: inherit;
   text-decoration: none;
 
   &::before {
     @include decor-btn;
     bottom: 5px;
-    right: -20px;
+    right: 0;
     border-top-color: inherit;
   }
 
@@ -19,4 +20,8 @@
 .user-enter__icon {
   margin-right: 10px;
   fill: $primary-bg-color;
+
+  &--select {
+    margin-right: 0;
+  }
 }

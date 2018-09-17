@@ -3,6 +3,11 @@
   background-image: url("../img/bg-mob.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 217px;
+    background-image: url("../img/bg-tablet.jpg");
+  }
 }
 
 .page-header__container {

@@ -1,9 +1,20 @@
 .main-nav {
   position: relative;
 
-  &--closed .main-nav__list,
-  &--closed .main-nav__info {
-    display: none;
+  @media (max-width: $mobile-width-only) {
+    &--closed .main-nav__list,
+    &--closed .main-nav__info {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &--closed .site-list {
+      display: none;
+    }
   }
 }
 
@@ -20,10 +31,6 @@
 
 .main-nav__item {
   padding: 15px 25px;
-}
-
-.main-nav__info {
-  display: none;
 }
 
 .main-nav__toggle {
@@ -50,18 +57,34 @@
 }
 
 .main-nav--opened {
-  position: fixed;
-  width: 90%;
-  margin-left: 6%;
-  margin-top: 20px;
-  padding: 25px;
-  background-color: $primary-text-color;
-  z-index: 3;
+  @media (max-width: $mobile-width-only) {
+    position: fixed;
+    width: 290px;
+    margin-left: 6%;
+    margin-top: 20px;
+    padding: 25px;
+    color: $secondary-bg-color;
+    background-color: $primary-text-color;
+    z-index: 3;
+  }
+}
+
+.main-nav--opened .site-list {
+  @media (min-width: $tablet-width) {
+    position: fixed;
+    top: 45px;
+    width: 405px;
+    margin-top: 20px;
+    margin-left: 2%;
+    padding: 25px;
+    background-color: $primary-text-color;
+    z-index: 3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
   top: -45px;
-  left: -15%;
+  left: 0;
 
   &::before,
   &::after {
@@ -82,5 +105,9 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -13px;
   }
 }
