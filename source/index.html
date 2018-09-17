@@ -81,7 +81,7 @@
               Личный кабинет</a>
             </li>
             <li class="main-nav__item  user-list__item">
-              <svg class="user-enter__icon" width="10" height="12" role="img">
+              <svg class="user-enter__icon  user-enter__icon--select" width="10" height="12" role="img">
                   <use xlink:href="#rub"></use>
                 </svg>
               <select class="user-list__select" name="currency" id="currency">
@@ -109,7 +109,13 @@
         <section class="hero">
           <div class="hero__wrapper">
             <div class="hero__logo logo">
-              <img class="logo__photo" src="img/logo.png" width="70" height="70" alt="логотип морских прогулок">
+              <picture>
+                <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/logo-desc.webp">
+                <source type="image/webp" srcset="img/webp/logo.webp">
+
+                <source media="(min-width: 1170px)" srcset="img/logo-desc.png">
+                <img class="logo__photo" src="img/logo.png" alt="логотип морских прогулок">
+              </picture>
             </div>
 
             <h1 class="hero__title">
@@ -164,7 +170,15 @@
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
                   <b class="card__label  card__label--hit"><span>Хит продаж</span></b>
-                  <img src="img/card1-mob.jpg" width="290" height="228" alt="море по дороге в Анапу" class="card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/card1-desc.webp">
+                    <source type="image/webp" media="(min-width: 720px)" srcset="img/webp/card1-tablet.webp">
+                    <source type="image/webp" srcset="img/webp/card1-mob.webp">
+
+                    <source media="(min-width: 1170px)" srcset="img/card1-desc.jpg">
+                    <source media="(min-width: 720px)" srcset="img/card1-tablet.jpg">
+                    <img src="img/card1-mob.jpg" alt="море по дороге в Анапу" class="card__photo">
+                  </picture>
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
@@ -193,7 +207,15 @@
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
                   <b class="card__label"><span>Акция</span></b>
-                  <img src="img/card2-mob.jpg" width="290" height="228" alt="на морской прогулке" class="card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/card2-desc.webp">
+                    <source type="image/webp" media="(min-width: 720px)" srcset="img/webp/card2-tablet.webp">
+                    <source type="image/webp" srcset="img/webp/card2-mob.webp">
+
+                    <source media="(min-width: 1170px)" srcset="img/card2-desc.jpg">
+                    <source media="(min-width: 720px)" srcset="img/card2-tablet.jpg">
+                    <img src="img/card2-mob.jpg" alt="на морской прогулке" class="card__photo">
+                  </picture>
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
@@ -223,7 +245,15 @@
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
                   <b class="card__label"><span>скидка 10%</span></b>
-                  <img src="img/card3-mob.jpg" width="290" height="228" alt="вид на Геленджик" class="card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/card3-desc.webp">
+                    <source type="image/webp" media="(min-width: 720px)" srcset="img/webp/card3-tablet.webp">
+                    <source type="image/webp" srcset="img/webp/card3-mob.webp">
+
+                    <source media="(min-width: 1170px)" srcset="img/card3-desc.jpg">
+                    <source media="(min-width: 720px)" srcset="img/card3-tablet.jpg">
+                    <img src="img/card3-mob.jpg" alt="вид на Геленджик" class="card__photo">
+                  </picture>
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
@@ -252,7 +282,15 @@
 
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
-                  <img src="img/card4-mob.jpg" width="290" height="228" alt="вид на Новороссийск" class="card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/card4-desc.webp">
+                    <source type="image/webp" media="(min-width: 720px)" srcset="img/webp/card4-tablet.webp">
+                    <source type="image/webp" srcset="img/webp/card4-mob.webp">
+
+                    <source media="(min-width: 1170px)" srcset="img/card4-desc.jpg">
+                    <source media="(min-width: 720px)" srcset="img/card4-tablet.jpg">
+                    <img src="img/card4-mob.jpg" alt="вид на Новороссийск" class="card__photo">
+                  </picture>
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
@@ -280,7 +318,11 @@
 
               <li class="catalog__item  card">
                 <a href="#" class="card__link-photo">
-                  <img src="#" alt="вид на Абрау-Дюрсо" class="card__photo">
+                  <picture>
+                      <source type="image/webp" media="(min-width: 1170px)" srcset="img/webp/card5-desc.webp">
+
+                    <img src="img/card5-desc.jpg" alt="вид на Абрау-Дюрсо" class="card__photo">
+                  </picture>
                 </a>
                 <div class="card__info">
                   <a href="#" class="card__link">
