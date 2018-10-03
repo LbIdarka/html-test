@@ -5,8 +5,23 @@
 
 .page-footer__wrapper {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-footer__info {
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
+}
+
+.page-footer__info-text {
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
 }

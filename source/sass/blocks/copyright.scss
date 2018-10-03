@@ -1,4 +1,9 @@
 .copyright {
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.7px;
+    text-align: left;
+  }
 }
