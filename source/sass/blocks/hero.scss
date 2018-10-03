@@ -14,12 +14,26 @@
   letter-spacing: -0.25px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 720px;
+    margin: 0;
+    font-size: 70px;
+  }
 }
 
 .hero__title-small {
   font-size: 20px;
   letter-spacing: 0.5px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+    font-size: 26px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .hero__btn {
@@ -34,6 +48,10 @@
       stroke: $primary-bg-color;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .hero__icon {
@@ -47,4 +65,10 @@
   stroke-width: 3px;
   stroke-dasharray: 12 6;
   fill-rule: evenodd;
+}
+
+.hero__logo {
+  @media (min-width: $tablet-width) {
+    margin-top: 81px;
+  }
 }
