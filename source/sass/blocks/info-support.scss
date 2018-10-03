@@ -3,9 +3,15 @@
   padding-bottom: 10px;
   text-align: center;
 
+
   @media (max-width: $mobile-width-only) {
     color: $secondary-bg-color;
     background-color: $primary-text-color;
+  }
+
+  &--revers {
+    color: $primary-text-color;
+    background-color: $secondary-bg-color;
   }
 
   @media (min-width: $tablet-width) {

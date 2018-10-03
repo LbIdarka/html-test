@@ -1,5 +1,13 @@
 .card {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 345px;
+
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
 }
 
 .card__label {
@@ -36,6 +44,10 @@
   &--hit::before {
     border-color: $primary-bg-color $primary-bg-color transparent $primary-bg-color;
   }
+
+  @media (min-width: $tablet-width) {
+    right: 31px;
+  }
 }
 
 .card__photo {
@@ -50,6 +62,11 @@
   padding: 25px 10px 30px 22px;
   color: $primary-text-color;
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .card__link {
@@ -85,6 +102,10 @@
 .card__track-text {
   margin: 0;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
 }
 
 .card__track-subtitle {
